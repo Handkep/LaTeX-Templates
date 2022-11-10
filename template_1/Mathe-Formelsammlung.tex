@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[
+  lmargin=70pt,
+  rmargin=70pt,
+  tmargin=70pt,
+  bmargin=70pt
+  ]{geometry}
+\usepackage[dvipsnames]{xcolor} %Farben
+
+\usepackage{amsmath} %Mathematische Ausdrücke
+\usepackage{amssymb}
+% \usepackage{unicode-math}
+% \setmathfont{texgyrepagella-math.otf}
+
+
+\usepackage{lipsum} %
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage[ngerman]{babel}
+\usepackage{titlesec} % modifikationen von \section
+\usepackage{fancyhdr} % header und footer
+\usepackage{tabularray} % Bessere Tabellen
+
+% Comfortaa
+\usepackage[default]{comfortaa} % Font
+\usepackage[T1]{fontenc} %Deutsch
+% \usepackage[utf8]{inputenc}
+% \usepackage{fontenc} %Deutsch
+% Monsterrar
+% \usepackage[defaultfam,light,tabular,lining,alternates]{montserrat} %% Option 'defaultfam'
+\usepackage{lastpage}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+% \fancyhead[RO]{\textsc{\nouppercase{\newlinetospace{{\leftmark}}\quad\thepage}}}
+\renewcommand{\headrulewidth}{0.1mm} % dicke der Linie unter dem Header
+\renewcommand{\sectionmark}[1]{\markright{\thesection}}
+% \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+% \renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+
+
+\fancyhead[R]{\today}
+\fancyhead[L]{Name1, Name2, Name3}
+\fancyfoot[R]{\thepage}
+% \fancyfoot[R]{Seite \thepage \hspace{1pt} von \pageref{LastPage}} 
+% \fancyfoot[R]{\thepage \hspace{1pt}/\pageref{LastPage}}  
+
+\title{Dokument-Vorlage}
+\date{\today}
+\author{Paulus Handke}
+
+\titleformat{\chapter}[block]
+{\bfseries\filcenter\color{MidnightBlue}\huge}{\fcolorbox{MidnightBlue}{white}{\thesection}}{1em}{}
+
+\titleformat{\section}[block]
+{\bfseries\filcenter\color{MidnightBlue}\huge}{\fcolorbox{MidnightBlue}{white}{\thesection}}{1em}{}
+
+\titleformat{\subsection}[block]
+{\bfseries\color{teal}} %format
+{\fcolorbox{teal}{white}{\thesubsection}}{1em}{}
+
+
+
+
+\begin{document}
+\normalfont
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\tableofcontents
+\pagenumbering{arabic}
+\newpage
+
+
+\section{Mengen}
+
+
+
+\input{mengen.tex}
+\section{Aussagen}
+\input{aussagen.tex}
+\section{Aussageformen}
+\section{Funktionen}
+\input{funktionen.tex}
+
+% Linie:
+% \titlerule[0.3mm]
+\section{Einführung}
+% \section{first section}
+\subsection{asgsdgh}
+\subsection{asgsdgh}
+\subsection{asgsdgh}
+
+  \lipsum[1]
+  \section{noch eine Einführung}
+
+\begin{circuitikz}[european] \draw
+(0,2) node[and port] (myand1) {}
+(2,1) node[xor port] (myxor) {}
+(0,0) node[nand port] (myand2) {}
+(myand1.out) -- (myxor.in 1)
+(myand2.out) -- (myxor.in 2);
+\end{circuitikz}
+  \lipsum[1]
+
+\end{document}

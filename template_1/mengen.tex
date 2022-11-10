@@ -1,0 +1,95 @@
+\subsection{Definition}
+Unter einer Menge verstehen wir jede Zusammenfassung $M$ von bestimmten wohlunterschiedenen
+Objekten $m$ zu einem Ganzen. Sie können durch:
+\begin{enumerate}
+    \item Aufzählung
+    \item Benennung ihrer Eigenschaften
+\end{enumerate}
+definiert werden.
+
+
+\subsection{Darstellungsformen}
+
+
+\begin{tabular}{ll}
+    Zeichen & Bezeichnung \\
+    \hline \\ 
+    $M=\{a_1,a_2,a_3,...,a_n\}$ & endliche Menge \\
+    \hline
+    $\emptyset =\{\}$ & leere Menge \\
+    \hline
+    $M=\{a_1,a_2,a_3...\}$ & unendliche Menge \\
+    \hline
+    $M=\{x|x$ besitzt Eigenschaft $E_1,...,E_n\}$ & endliche / beschränkte Menge \\
+    \hline
+    $|M|$ & Anzahl der Elemente in $M$ \\
+\end{tabular}
+    
+    
+    \subsection{Elemente einer Menge}
+    \begin{tabular}{ll}
+        asdfg & in Worten \\
+    $a\in M:=$ & $a$ enthalten in $M$ \\
+    $a\notin M:=$ & $a$ nicht enthalten in $M$ \\
+\end{tabular}
+
+\subsection{Teilmengen}
+
+Seien zwei Mengen $A$ und $B$ gegeben:
+
+\begin{tabular}{ll}
+    Ausdruck & in Worten \\
+    $A\subseteq B:=$ & $A$ ist eine Teilmenge von $B$, wenn alle Elemente von $A$ \\
+    &auch Elemente von $B$ sind \\
+    \(A \nsubseteq B:=\) & $A$ ist keine Teilmenge von $B$ \\
+    \(A = B:=\) & $A \subset B$ und $B \subset A$ \\
+\end{tabular}
+
+\subsection{Mengenoperationen}
+\subsubsection{Vereinigung $\cup$}
+$A\cup B:=\{x|x\in A\vee x\in B\}$ \hspace{2cm} Die Menge aller Elemente, die zu $A$ {\bf oder zu} $B$ gehören
+\subsubsection{Schnitt $\cap$}
+$A\cap B:=\{x|x\in A\wedge x\in B\}$ \hspace{2cm} Die Menge aller Elemente, die zu $A$ {\bf und zu} $B$ gehören
+\subsubsection{Differenz $\setminus$}
+$A\setminus  B:=\{x|x\in A\wedge x\notin B\}$ \hspace{2cm} Die Menge aller Elemente, die zu $A$, aber {\bf nicht zu} $B$ gehören
+\subsubsection{symmetrische Differenz}
+$(A\setminus B)(B\setminus A)$
+
+\subsection{Indizierte Mengen}
+Eine Indexmenge enthält die Nummerierung unterschiedlichster Elemente einer anderen Menge.
+\subsubsection{Beispiel}
+Es seien $C_1,C_2 C_3,C_4$ Mengen. Dann ist die zugehörige Indexmenge\\
+$I={1,2,3,4}$. Wir können die Menge dieser Mengen so schreiben: \\
+$C=\{C_i|I\in I\}=\{C_i \}_{i\in I }$
+
+\subsection{Potenzmenge}
+Die Potenzmenge $\mathcal{P}(M)$ oder $2^M$ ist eine Menge bestehend aus allen Teilengen von $M$
+\subsubsection{Beispiel}
+$\mathcal{P}(\emptyset)=\{\emptyset \}$\\
+$\mathcal{P}(\{2\})=\{\emptyset \}$\\
+$\mathcal{P}(\{2,3,4\})=\{\emptyset, \{2\}, \{3\}, \{4\}, \{2,3\}, \{2,4\}, \{3,4\}, \{2,3,4\}\}$
+
+\subsection{Tupel}
+Ein $n$-Tupel ist eine geordnete Liste von $n$ Elementen. Man schreibt: $(x_1,...,x_n)$
+\begin{itemize}
+    \item Elemente eines Tupels müssen nicht verschieden sein
+\end{itemize}
+\subsubsection{Beispiel}
+\begin{itemize}
+    \item Paar: $(5,2)$
+    \item Tripel: $(a,2,6)$
+    \item Graph: $(V,E)$ über Knotenmenge $V$ und Kantenmenge $E$
+    \item $(a,a,b,b,c,c,d)\neq (a,b,c,d)$, aber $\{a,a,b,b,c,c,d\}=\{a,b,c,d\}$
+\end{itemize}
+
+\subsection{Kartesisches Produkt zweier Mengen}
+Das kartesische Produkt zweier Mengen $A$ und $B$ ist die Menge aller Paare $(a,b)$ mit $a\in A$ und $b\in B$, kurz $A\times B=\{(a,b)|a\in A,b\in B\}$\\
+{\bfseries }Tipp: Das kartesische Produkt heißt auch Kreuzprodukt
+\subsection{Beispiel}
+$A=\{a,b,c\},B=\{1,2,3,4\}$\\
+$A\times B=\{(a,1),(a,2),(a,3),(a,4),(b,1),(b,2),(b,3),(b,4),(c,1),(c,2),(c,3),(c,4)\}$\\
+$A\times A=A^2=\{(a,a),(a,b),(a,c),(b,a),(b,b),(b,c),(c,a),(c,b),(c,c)\}$
+
+\subsection{Zweistellige Relationen}
+Eine zweistellige Relation $R$ zwischen zwei Mengen $A$ und $B$ ist eine Teilmenge von $A\times B$:\\
+$R\subseteq A\times B$. Dabei ist $A$ die Quellmenge und $B$ die Zielmenge
