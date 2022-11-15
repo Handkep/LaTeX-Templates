@@ -1,0 +1,43 @@
+\subsection{Definition}
+Ein Vektor ist eine Größe, die als Strecke in eine bestimmte Richtung angesehen werden können.
+Vektoren werden meist als Kleinbuchstaben mit darüberliegendem Pfeil ( $\vec{a}, \vec{b}$, ... ), oder
+durch die Angabe von start- und Endpunkt ( $\overrightarrow{AB}, \overrightarrow{CD}, ...$ ) bezeichnet.
+
+
+\subsection{graphische Darstellung}
+\begin{tikzpicture}[scale=0.6, transform shape]  %projectile motion
+    \begin{axis}[
+    % width=12cm, %set bigger width
+    % height=6cm,
+    xmin=0,xmax=10.5,
+    ymin=0,ymax=10.5,
+    xlabel=$x$,
+    ylabel=$y$,
+    axis x line = bottom,
+    axis y line = left,
+    axis line style={->},
+    %axis on top,
+    % ticks = none,clip=false,
+    ]
+\coordinate (A) at (axis cs: 0.5,2);
+\coordinate (B) at (axis cs: 8,5);
+\draw[very thick,->](A)--(B);
+    \end{axis}
+\end{tikzpicture}
+karnaugh-map package
+
+\begin{displaymath}
+    \begin{array}{|c c|c|}
+    % |c c|c| means that there are three columns in the table and
+    % a vertical bar ’|’ will be printed on the left and right borders,
+    % and between the second and the third columns.
+    % The letter ’c’ means the value will be centered within the column,
+    % letter ’l’, left-aligned, and ’r’, right-aligned.
+    x_1 & x_0 & x_1 \land x_0\\ % Use & to separate the columns
+    \hline % Put a horizontal line between the table header and the rest.
+    1 & 1 & 1\\
+    1 & 0 & 0\\
+    0 & 1 & 0\\
+    0 & 0 & 0\\
+    \end{array}
+    \end{displaymath}
