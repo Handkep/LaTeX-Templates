@@ -1,0 +1,29 @@
+Die komplexen Zahlen stellen eine Erweiterung des Zahlenstrahls zur Zahlenebene. Dargestellt werden sie aufgeteilt in Realteil $Re$ und Imaginärteil $Im$. z.B.: \\
+$3+5j$\\
+$-1+3j$
+\\Graphisch können $\mathbb{C}$ auch in der Ebene Dargestellt werden:
+\begin{figure}[h]
+    \begin{tikzpicture}
+        \begin{axis}[
+        xmin=-5.5,xmax=5.5,
+        ymin=-5.5,ymax=5.5,
+        xlabel=$Re$,
+        ylabel=$Im$,
+        % axis x line = center,
+        % axis y line = center,
+        axis lines=center,
+        axis line style = thick,
+        x label style={anchor=north},
+        y label style={anchor=east},
+        axis line style={->},
+        axis on top,
+        ]
+    \coordinate (A) at (axis cs: 0,0);
+    \coordinate (B) at (axis cs: 3,2);
+    \draw[very thick,->](A)--(B);
+        \end{axis}
+    \end{tikzpicture}
+\end{figure}
+
+
+\newpage
