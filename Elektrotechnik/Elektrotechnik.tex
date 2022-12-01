@@ -5,7 +5,7 @@
   tmargin=70pt,
   bmargin=70pt
   ]{geometry}
-\usepackage[dvipsnames]{xcolor} %Farben
+\usepackage[dvipsnames,x11names]{xcolor} %Farben
 
 \usepackage{amsmath} %Mathematische Ausdrücke
 \usepackage{amssymb}
@@ -30,6 +30,7 @@
 % Monsterrar
 % \usepackage[defaultfam,light,tabular,lining,alternates]{montserrat} %% Option 'defaultfam'
 \usepackage{lastpage}
+\usepackage{xfrac} % Brüche im a/b format
 
 
 \pagestyle{fancy}
@@ -42,12 +43,12 @@
 
 
 \fancyhead[R]{\today}
-\fancyhead[L]{Name1, Name2, Name3}
+\fancyhead[L]{Paulus Handke}
 \fancyfoot[R]{\thepage}
 % \fancyfoot[R]{Seite \thepage \hspace{1pt} von \pageref{LastPage}} 
 % \fancyfoot[R]{\thepage \hspace{1pt}/\pageref{LastPage}}  
 
-\title{Dokument-Vorlage}
+\title{Elektrotechnik1 - Formelsammlung}
 \date{\today}
 \author{Paulus Handke}
 
@@ -65,9 +66,28 @@
 
 
 \begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
+	{\LARGE Hochschule für Technik und Wirtschaft Berlin\par}
+	\vspace{1cm}
+	{\Large Elektrotechnik1 \par}
+	\vspace{1.5cm}
+	{\huge\bfseries \color{MidnightBlue} Formelsammlung \par}
+	\vspace{2cm}
+	{\Large\itshape Paulus Handke\par}
+	% \vfill
+	% supervised by\par
+	% Dr.~Mark \textsc{Brown}
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
 \normalfont
 \pagenumbering{gobble}
-\maketitle
+% \maketitle
 \newpage
 \tableofcontents
 \pagenumbering{arabic}

@@ -1,23 +1,85 @@
+% \begin{footnotesize}
 \begin{center}
         
-    \begin{tblr}{Q[l,m]Q[l,m,$$]Q[l,m]Q[l,m,$$]Q[l,m]} 
-    % \begin{tblr}{Q[lm]Q[r,$]Q[r,$$]Q[l]} 
-        Name                & \text{Formel}                                 &Elemente       & \text{Einheit}                    & \text{Bestandteile} \\
+    % \begin{tblr}{Q[l,m]Q[l,m,$$]Q[l,m,$$]} 
+    \SetTblrInner{rowsep=1mm,colsep=2pt}
+    \begin{tblr}{
+        rows = {valign=m},
+        colspec = {|Q[l]Q[l]Q[l]|},
+        row{1} = {bg=PineGreen5, fg=white,halign=c},
+        row{odd} = {bg=SeaGreen},
+        column{1} = {mode=text,4cm},
+        column{2} = {mode=dmath,6cm},
+        column{3} = {mode=dmath,5cm},
+    }
         \hline
-        Ladung              & Q = e \cdot n ;                               & asdf          & \left[ Q \right] = A \cdot s = C  & {$n:$ Anzahl Elektronen \\ $e:$ Elementarladung}\\
-        \hline[dashed]
+        Name                & \text{Formel}                                 & \text{Einheit} \\
+        \hline
+        Ladung              & Q = e \cdot n ;                               & \left[ Q \right] = A \cdot s = C  \\
+
         Elementarladung     & e = 1,602 \cdot 10^{-19} C  \\
+
+        el. Stromstärke     & I = \frac{\Delta Q}{\Delta t} = \frac{Q}{t}   &\left[I\right] = A \\
+
+        Stromdichte         & J = \frac{I}{A}                               & \left[J \right] = \frac{A}{mm^2} \\ 
+
+        Strömungsgeschw.    & v = \frac{I}{e \cdot n \cdot A}               \\
+
+        el. Spannung        & U = \frac{W}{Q}                               & \left[U \right] = \frac{J}{C} = \frac{N \cdot m}{A \cdot s} = V \\
+
+        el. Potential       & \phi_A = \frac{W_A}{Q} \newline  W_A:\text{pot. Energie am Punkt } A & \left[\phi_A \right] = V\\
+                            % & W_A: potentielle  Energie am Punkt A          &   \\
+
+        el. Arbeit          & W = U \cdot I \cdot t = U \cdot Q             & \left[W \right] = J \\
+
+        el. Leistung        & P = \frac{W}{t} = \frac{U \cdot I \cdot t}{t} = U \cdot I = R \cdot I^2    & \left[W \right] = J \\
+
+        Wirkungsgrad        & \eta = \frac{P_{Nutz}}{P_{gesamt}}            & \left[W \right] = J \\
         
-        \hline[dashed]
-        Stromstärke         & I = \frac{\Delta Q}{\Delta t} = \frac{Q}{t}   & asdf          &\left[I\right] = A                 & {$A:$ Ampere \\ $Q:$ Ladung \\ $t:$ Zeit} \\
+        el. Widerstand      & R = \frac{U}{I} = \frac{\rho \cdot l}{A} = \frac{l}{\kappa \cdot A} & \left[R \right] = \sfrac{V}{A} = \Omega \\
         
-        \hline[dashed]
-        Stromdichte         & J = \frac{I}{A}                               & {$I:$ Stromstärke \\ $A:$ Fläche}          & \left[J\right] = \frac{A}{mm^2}   & {$A:$ Ampere}\\ 
+        el. Widerstand \\ Temperaturabhängig      & R = \frac{U}{I} = \frac{\rho \cdot l}{A} = \frac{l}{\kappa \cdot A} & \left[R \right] = \sfrac{V}{A} = \Omega \\
         
-        \hline[dashed]
-        Strömungsgeschw.    & v = \frac{I}{e \cdot n \cdot A}               & {$I:$ Stromstärke \\ $e:$ Elementarladung \\ $n:$ Stromstärke \\ $A:$ Fläche}\\
-        \text{}             &   \frac{I}{A}                                       & \\
-        \text{}             &   \frac{I}{A}                                       & \\
+        el. Leitwert        & G = \frac{I}{U}                               & \left[G \right] = \left[\frac{1}{R} \right] = \frac{1}{\Omega} = S  \\
+        
+        % spezifischer Widerstand & R = \frac{\rho \cdot l}{A} = \frac{l}{\kappa \cdot A} & \left[R \right] = \Omega  \\
+        
+        spezifischer Widerstand & \rho = \frac{1}{\kappa} = \frac{R \cdot A}{l}           & \left[\rho \right] = \Omega \cdot m  \\
+        
+        Leitfähigkeit       & \kappa = \frac{1}{\rho} = \frac{G \cdot l}{A}           & \left[\rho \right] = \sfrac{S}{m}  \\
+
+        \hline
+
+    \end{tblr}
+\end{center}
+% \end{footnotesize}
+
+\subsection{Formelzeichen \& Einheiten:}
+\begin{center}
+    \begin{tblr}{
+        rows = {valign=m},
+        colspec = {|Q[l]Q[l]|[.5mm]Q[l]Q[l]|},
+        row{1} = {bg=PineGreen5, fg=white,halign=c},
+        row{odd} = {bg=SeaGreen},
+        column{1} = {mode=text},
+        column{2} = {mode=dmath},
+        column{3} = {mode=text},
+        column{4} = {mode=dmath},
+    }
+    \hline
+    Name                & \text{Formelzeichen}  & Einheit & \text{Zeichen} \\
+    
+    el. Stromstärke     & I     & Ampere                    & 1 A   \\
+    Elementarladung     & e     &                           &   \\
+    Fläche              & A     & Meter                     & 1 M   \\
+    Ladung              & Q     & Amperesekunde, Coloumb    & 1 As = 1 C   \\
+    Arbeit              & W     & Wattsekunde, Joule        & 1 Ws = 1 J  \\
+    Zeit                & t     & Sekunde                   & 1 s  \\
+    el. Spannung        & U     & Volt                      & 1 V \\
+    el. Widerstand      & R     & Ohm                       & 1 \sfrac{V}{A} = 1 \frac{1}{S} = 1 \Omega \\
+    el. Leitwert        & G     & Siemens                   & 1 S = 1 \frac{1}{\Omega} \\
+    % spezifischer Widerstand & R     & Ohm                   & 1 S = 1 \frac{1}{\Omega} \\
+    \hline
     \end{tblr}
 \end{center}
 
