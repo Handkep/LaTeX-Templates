@@ -1,0 +1,13 @@
+\begin{circuitikz}[european]
+    \draw (0,0) to[isource, l=$I_{q1}$] (0,3) -- (2,3)
+    to[R,R=$R_i$] (2,0) -- (0,0);
+    \draw (2,3) to[short, o-] (4,3) to[R,R=$R_L$] (4,0) to[short, -o] (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}[european]
+    \draw (0,0) to[isource, l=$I_{q1}$] (0,3) to[short, -*] (2,3)
+    \draw (2,3) to[R,R=$R_i$] (2,0) -- (0,0);
+    \draw (2,3) to[short, -o] (3,3);
+    \draw (2,0) to[short, -o] (3,0);
+    % \draw (2,3) to[short, o-] (4,3) to[R,R=$R_L$] (4,0) to[short, -o] (2,0);
+\end{circuitikz}
