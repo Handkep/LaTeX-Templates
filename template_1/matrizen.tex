@@ -1,0 +1,88 @@
+Für $n \in \mathbb{N}$ und $\mathbb{K} = \mathbb{R}$ oder $\mathbb{K} = \mathbb{C}$ ist der Vektorraum $\mathbb{K}^n$ durch
+\begin{displaymath}
+    \mathbb{K}^n:=\left\{a = 
+    \begin{bmatrix} 
+        a_1 \\ 
+        \vdots \\ 
+        c_1 
+    \end{bmatrix}  
+    \vert a_1,...,a_n \in \mathbb{K} \right\}
+\end{displaymath}
+gegeben. Die Operationen sind für $a,b \in V $ und $\lambda \in \mathbb{K}$ durch
+\begin{displaymath}
+    \lambda \cdot a := 
+    \begin{bmatrix}
+        \lambda a_1 \\
+        \vdots \\
+        \lambda a_n \\
+    \end{bmatrix}
+    , a+b = 
+    \begin{bmatrix}
+        a_1 \\
+        \vdots \\
+        a_n \\
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
+        b_1 \\
+        \vdots \\
+        b_n \\
+    \end{bmatrix}
+    :=
+    \begin{bmatrix}
+        a_1 + b_1 \\
+        \vdots \\
+        a_n + b_n \\
+    \end{bmatrix}
+\end{displaymath}
+definiert. Setze $a-b := a+(-1)\cdot b$
+\subsection{Standardskalarprodukt auf $\mathbb{R}^n$ bzw. $\mathbb{C}^n$}
+Sei $a,b \in \mathbb{K}^n$ mit
+\begin{displaymath}
+    a=
+    \begin{bmatrix}
+        a_1 \\
+        \vdots \\
+        a_n \\
+    \end{bmatrix}
+    ,
+    b=
+    \begin{bmatrix}
+        b_1 \\
+        \vdots \\
+        b_n \\
+    \end{bmatrix}
+    .
+\end{displaymath}
+Dann ist auf $\mathbb{R}^n$ durch
+\begin{displaymath}
+    \left< a,b \right>_{\mathbb{R}^n} = a_1 \cdot b_1 + ... + a_n \cdot b_n
+\end{displaymath}
+und auf $\mathbb{C}^n$ durch
+\begin{displaymath}
+    \left< a,b \right>_{\mathbb{C}^n} = a_1^* \cdot b_1 + ... + a_n^* \cdot b_n
+\end{displaymath}
+eine Skalarprodukt gegeben. Zwei Vektoren $a,b \in \mathbb{K}^n$ sind orthogonal $a \perp b$ genau dann, wenn $\left< a,b \right>_{k^n} = 0$ gilt.
+
+\subsection{Standardnorm auf $\mathbb{R}^n$ bzw. $\mathbb{C}^n$}
+Sei $a \in \mathbb{K}^n $ mit
+\begin{displaymath}
+    a = 
+    \begin{bmatrix}
+        a_1 \\
+        \vdots \\
+        a_n \\
+    \end{bmatrix}
+    .
+\end{displaymath}
+Dann ist auf $\mathbb{K}^n$ durch 
+\begin{displaymath}
+    \left\| a \right\|_{\mathbb{K}^n} = \sqrt{\left| a_1 \right|^2 + ... + \left| a_n \right|^2} 
+\end{displaymath}
+eine Norm gegeben.
+\subsection{Induzierte Norm}
+Sei $(V,\mathbb{K},+,\cdot)$ ein Vektorraum mit Skalarprodukt $\left< \cdot , \cdot \right>$ Dann ist durch
+\begin{displaymath}
+    \left\| a \right\| := \sqrt{\left< a , a \right>}
+\end{displaymath}
+eine durch das Skalarprodukt induzierte Norm gegeben.
