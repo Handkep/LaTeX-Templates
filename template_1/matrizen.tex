@@ -1,10 +1,85 @@
+\subsection{Definition}
+Die rechteckige Anordnung von Elementen Heißt Matrix:
+\begin{displaymath}
+    A = 
+    \begin{bmatrix} 
+        a_{11} & a_{12} & \cdots & a_{1n} \\ 
+        a_{21} & a_{22} & \cdots & a_{2n} \\ 
+        \vdots & \vdots & \ddots & \vdots \\ 
+        a_{m1} & a_{m2} & \cdots & a_{mn} 
+    \end{bmatrix}
+\end{displaymath}
+Alle Elemente der Matrix sind über $a_{ij}$ indezierbar.
+Eine Matrix, die aus $n$ Spalten und $m$ Zeilen besteht, besitzt die \textbf{Dimension $m \times n$}.
+
+\subsection{besondere Matrizen}
+\begin{tblr}{
+    rows = {valign=m},
+    colspec = {|Q[l]Q[c]Q[c]|},
+    row{1} = {bg=PineGreen5, fg=white,halign=c},
+    row{odd} = {bg=SeaGreen},
+    column{1} = {mode=text,4cm},
+    column{2} = {mode=dmath,6cm},
+    column{3} = {mode=dmath,5cm},
+}
+    Name & Definition & Beispiel\\
+    Quadratische Matrix & 
+    \begin{bmatrix} 
+        a_{11} & a_{12} & \cdots & a_{1n} \\ 
+        a_{21} & a_{22} & \cdots & a_{2n} \\ 
+        \vdots & \vdots & \ddots & \vdots \\ 
+        a_{n1} & a_{n2} & \cdots & a_{nn} 
+    \end{bmatrix} & 
+    \begin{bmatrix} 
+        3  &  21 & -4 \\ 
+        2  &  39 & 2+4j \\ 
+        -5 & 7 & 90 
+    \end{bmatrix}\\
+    Nullmatrix & 
+    \begin{bmatrix} 
+        0 & 0 & \cdots & 0\\
+        0 & 0 & \cdots & 0\\
+        \vdots & \vdots & \ddots & \vdots \\ 
+        0 & 0 & \cdots & 0\\
+    \end{bmatrix}&
+    \begin{bmatrix} 
+        0 & 0 & 0 \\ 
+        0 & 0 & 0 \\ 
+        0 & 0 & 0 \\
+    \end{bmatrix}\\
+    Einheitsmatrix & 
+    \begin{bmatrix} 
+        a_{11} & a_{12} & \cdots & a_{1n} \\ 
+        a_{21} & a_{22} & \cdots & a_{2n} \\ 
+        \vdots & \vdots & \ddots & \vdots \\ 
+        a_{m1} & a_{m2} & \cdots & a_{mn} 
+    \end{bmatrix}&
+    \begin{bmatrix} 
+        1 & 0 & 0 \\ 
+        0 & 1 & 0 \\ 
+        0 & 0 & 1 \\
+    \end{bmatrix}\\
+    Einheitsmatrix & 
+    \begin{bmatrix} 
+        a_{11} & 0 & \cdots & 0 \\ 
+        0 & a_{22} & \cdots & 0 \\ 
+        \vdots & \vdots & \ddots & \vdots \\ 
+        0 & 0 & \cdots & a_{mn} 
+    \end{bmatrix}&
+    \begin{bmatrix} 
+        8 & 0 & 0 \\ 
+        0 & 3+6j & 0 \\ 
+        0 & 0 & 5 \\
+    \end{bmatrix}\\
+\end{tblr}
+\subsection{Addition und Multiplikation von Matrizen}
 Für $n \in \mathbb{N}$ und $\mathbb{K} = \mathbb{R}$ oder $\mathbb{K} = \mathbb{C}$ ist der Vektorraum $\mathbb{K}^n$ durch
 \begin{displaymath}
     \mathbb{K}^n:=\left\{a = 
     \begin{bmatrix} 
         a_1 \\ 
         \vdots \\ 
-        c_1 
+        a_n 
     \end{bmatrix}  
     \vert a_1,...,a_n \in \mathbb{K} \right\}
 \end{displaymath}
@@ -16,7 +91,10 @@ gegeben. Die Operationen sind für $a,b \in V $ und $\lambda \in \mathbb{K}$ dur
         \vdots \\
         \lambda a_n \\
     \end{bmatrix}
-    , a+b = 
+\end{displaymath}
+und
+\begin{displaymath}
+    a+b = 
     \begin{bmatrix}
         a_1 \\
         \vdots \\
